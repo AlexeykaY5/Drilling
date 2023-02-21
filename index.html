@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./img/logo__adress.svg" type="image/png">
     <link rel="stylesheet" href="./scss/style.css">
 </head>
-<body>
+<body id="body__overflow" class="body__overflow">
     <div class="bacg-body" id="bacg-body"></div>
     <header class="header">
         <div class="header__block">
@@ -46,7 +46,7 @@
                     по лучшей цене!
                 </h2>
             </div> 
-            <button class="homePage__button" id="homePage__button">Заказать звонок</button>
+            <button class="homePage__button" id="homePage__button">Бесплатный звонок</button>
             <div class="homePage__Item">
                 <div class="popup" id="popup">
                     <form class="popup__wrapper" action="" id="form">
@@ -131,7 +131,23 @@
         </div>
 
         <div class="services__block">
-            <a href="./page2.html" class="services__block-item">
+
+            <a href="./drilling.html" class="services__block-item">
+                <div class="services__item-image">
+                    <img class="services__image" src="./img/drilling-rig.png" alt="services-image-2">
+                </div>
+
+                <h3 class="services__item-title">
+                    БУРЕНИЕ СКВАЖИН
+                </h3>
+
+                <p class="services__item-text">
+                    Бурение скважин на воду проффесиональным оборудованием. Мы работаем 
+                    с любыми грунтами и гарантируем быструю и качественную работу.
+                </p>
+            </a>
+
+            <a href="./obustr.html" class="services__block-item">
                 <div class="services__item-image">
                     <img class="services__image" src="./img/brickwall.png" alt="services-image-1">
                 </div>
@@ -147,22 +163,7 @@
                 </p>
             </a>
 
-            <a href="#!" class="services__block-item">
-                <div class="services__item-image">
-                    <img class="services__image" src="./img/drilling-rig.png" alt="services-image-2">
-                </div>
-
-                <h3 class="services__item-title">
-                    БУРЕНИЕ СКВАЖИН
-                </h3>
-
-                <p class="services__item-text">
-                    Бурение скважин на воду оборудованием TizarPro UDV-70. Мы работаем 
-                    с любыми грунтами и гарантируем быструю и качественную работу, 
-                </p>
-            </a>
-
-            <a href="#!" class="services__block-item">
+            <a href="./cons.html" class="services__block-item">
                 <div class="services__item-image">
                     <img class="services__image" src="./img/cons.svg" alt="services-image-3">
                 </div>
@@ -174,11 +175,11 @@
                 <p class="services__item-text">
                     Основанием для тампонажа скважины может служить заявление 
                     владельца   скважины или предписание контролирующих органов. 
-                    Тампонаж скважин следует производить на основании проектной
+                    Тампонаж скважин следует производить на основании проектной.
                 </p>
             </a>
 
-            <a href="./page2.html" class="services__block-item">
+            <a href="./heating.html" class="services__block-item">
                 <div class="services__item-image">
                     <img class="services__image" src="./img/heater.png" alt="services-image-1">
                 </div>
@@ -242,14 +243,6 @@
                         </p>
                     </div>
 
-                    <!-- <div class="aboutUs__info__block-item">
-                        <img class="aboutUs__info__block-image" src="./img/ok.svg" alt="ok-image">
-                        <p class="aboutUs__info__block-text">
-                            Срок службы скважины от 50 лет,
-                            соблюдаем технологию бурения и используем современные 
-                            материалы высокого качества
-                        </p>
-                    </div> -->
                     <div class="aboutUs__info__block-item">
                         <img class="aboutUs__info__block-image" src="./img/ok.svg" alt="ok-image">
                         <p class="aboutUs__info__block-text">
@@ -336,7 +329,7 @@
                     </p>
                 </div>
         
-                <button class="contacts__button" id="contacts__button">Заказать звонок</button>
+                <button class="contacts__button" id="contacts__button">Бесплатный звонок</button>
             </div>
         
             <div class="contacts__map">
