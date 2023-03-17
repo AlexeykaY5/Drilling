@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(147, 170, 241) 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, rgb(147, 170, 241) 100%);
 }
 .footer a {
   color: #434343;

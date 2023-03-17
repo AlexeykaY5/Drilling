@@ -7,6 +7,7 @@
     <title>Бурение скважин на воду под ключ</title>
     <link rel="shortcut icon" href="./img/logo__adress.svg" type="image/png">
     <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/media-css/media.css">
 </head>
 <body id="body__overflow" class="body__overflow">
     <div class="bacg-body" id="bacg-body"></div>
@@ -25,28 +26,37 @@
 
             <a class="header__block-href" href="#number6">Контакты</a>
         </div>
-        <button class="header__buger">__</button>
+        <button class="header__buger">
+            <div class="header__buger--stick"></div>
+            <div class="header__buger--stick"></div>
+            <div class="header__buger--stick"></div>
+        </button>
     </header>
 
-
+    <div>
+        
+    </div>
     
     <section class="homePage">
         <div class="homePage__block">
             <div class="homePage__Item">
-                <h1 class="homePage__title">
-                    Бурение скважин на воду
-                    </br> 
-                    Монтаж отопления
-                </h1>
-                <h2 class="homePage__subTitle">
-                    Работаем по всей РБ 
-                    </br> 
-                    Делаем лучшее качество, 
-                    </br> 
-                    по лучшей цене!
-                </h2>
+                <div class="homePage__Item-block">
+                    <h1 class="homePage__title">
+                        Бурение скважин на воду
+                        </br> 
+                        Монтаж отопления
+                    </h1>
+                    <h2 class="homePage__subTitle">
+                        Чистая и вкусная вода у вас дома – это наша забота
+                        </br> 
+                        Мы работаем над тем, чтобы в вашем доме был постоянный доступ к воде, 
+                        в неограниченных количествах в любое время.
+                    </h2>
+                    <button class="homePage__button" id="homePage__button">Заказать звонок</button>
+                </div>
+                <div class="homePage__image">
+                </div>
             </div> 
-            <button class="homePage__button" id="homePage__button">Бесплатный звонок</button>
             <div class="homePage__Item">
                 <div class="popup" id="popup">
                     <form class="popup__wrapper" action="" id="form">
@@ -105,6 +115,10 @@
                                     </div>
                                 </fieldset>
                             </div>
+                            <div class="polit__konf">
+                                <input type="checkbox" name="polit__konf" id="polit__konf">
+                                Отправляя свои данные вы соглашаетесь с <a href="./polit.html">политикой конфиденциальности</a>
+                            </div>
                         </div>
                         <button class="popup__button" type="submit">отправить</button>
                     </form>
@@ -157,7 +171,7 @@
                 </h3>
 
                 <p class="services__item-text">
-                    Обустройство скважины на воду – комплекс работ, 
+                    комплекс работ, 
                     которые позволяют обустроить скважину для бесперебойной 
                     работы, для проведения в дом и ее комфортного использования.
                 </p>
@@ -173,9 +187,9 @@
                 </h3>
 
                 <p class="services__item-text">
-                    Основанием для тампонажа скважины может служить заявление 
-                    владельца   скважины или предписание контролирующих органов. 
-                    Тампонаж скважин следует производить на основании проектной.
+                    процедуры, выполняемые 
+                    для временной или постоянной остановки работы скважины.
+                    
                 </p>
             </a>
 
@@ -185,13 +199,13 @@
                 </div>
 
                 <h3 class="services__item-title">
-                    ОТОПЛЕНИЕ
+                    МОНТАЖ ОТОПЛЕНИЯ
                 </h3>
 
                 <p class="services__item-text">
-                    Обустройство скважины на воду – комплекс работ, 
-                    которые позволяют обустроить скважину для бесперебойной 
-                    работы, для проведения в дом и ее комфортного использования. 
+                    это процесс установки и подключения 
+                    топительного оборудования в доме или другом здании для 
+                    обеспечения тепла и комфорта в холодное время года.
                 </p>
             </a>
         </div>
@@ -214,7 +228,7 @@
                     <div class="aboutUs__info__block-item">
                         <img class="aboutUs__info__block-image" src="./img/ok.svg" alt="ok-image">
                         <p class="aboutUs__info__block-text">
-                            Скважина с первой попытки в любом грунте,
+                            Скважина с первой попытки в любом виде грунта,
                             бурим профессиональными буровыми машинами
                         </p>
                     </div>
@@ -231,15 +245,14 @@
                         <img class="aboutUs__info__block-image" src="./img/ok.svg" alt="ok-image">
                         <p class="aboutUs__info__block-text">
                             Самая чистая вода,
-                            бурим в любом виде грунта на глубину до 200 метров
+                            бурим в любом виде грунта на глубину до 100 метров
                         </p>
                     </div>
 
                     <div class="aboutUs__info__block-item">
                         <img class="aboutUs__info__block-image" src="./img/ok.svg" alt="ok-image">
                         <p class="aboutUs__info__block-text">
-                            Найдем воду 100% там где она есть, высококвалифицированные 
-                            специалисты с профессиональной техникой гарантируют результат
+                            Никаких проблем с водой - доверьтесь нашей команде профессионалов
                         </p>
                     </div>
 
@@ -257,6 +270,7 @@
                             Предоставляем гарантию сроком в 5 лет на скважину и год на обустройство скважины
                         </p>
                     </div>
+                    
                 </div> 
             </div>
 
@@ -325,16 +339,16 @@
         
                     <p class="contacts__questions-subtitle">
                         С удовольствем ответим на все ваши вопросы по телефону 
-                        <a class="contacts__questions-phone" href="tel:+375298948425">+375(29)894-84-25</a>. Или оставьте нам сообщение и мы вам перезвоним.
+                        <a class="contacts__questions-phone" href="tel:+375257066693">+375(25)706-66-93</a>. Или оставьте нам сообщение и мы вам перезвоним.
                     </p>
                 </div>
         
-                <button class="contacts__button" id="contacts__button">Бесплатный звонок</button>
+                <button class="contacts__button" id="contacts__button">Заказать звонок</button>
             </div>
         
             <div class="contacts__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37244.429110761805!2d26.821350625793247!3d54.30789700564203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc7468ba72edab%3A0x3e4ecbf6983ab8b6!2z0JzQvtC70L7QtNC10YfQvdC-LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2spl!4v1676595803017!5m2!1sru!2spl" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -347,7 +361,7 @@
             <p>
                 © 2023 Бурение скважин
             </p>
-            <a href="#!">Политика конфиденциальности</a>
+            <!-- <a href="#!">Политика конфиденциальности</a> -->
         </div>
 
         <div class="footer__block">

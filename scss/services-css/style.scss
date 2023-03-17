@@ -1,0 +1,287 @@
+body{
+    background-color: #eeeeee;
+}
+
+.info__block{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .info__block--title{
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .info__title{
+            margin: 10px 0;
+            font-size: 1.6rem;
+        }
+        
+        .info__title-underline{
+            width: 50%;
+            height: 3px;
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
+    }
+    
+    .info__block--item{
+            width: 60%;
+            margin: 0 auto;
+        p{
+            margin: 15px 0; 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup.active{
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup{
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+    z-index: 5;
+    background-color: #fff;
+    position: fixed;
+    left: 32%;
+    top: 10%;
+    border: 1px solid black;
+    width: 37%;
+    margin: auto;
+    border-radius: 20px;
+    .popup__wrapper{
+        height: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        
+        .popup__title{
+            margin-bottom: 20px;
+        }
+
+        .block__wrap{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .popup__block{
+                display: flex;
+                flex-direction: column;
+                .popup__block-container{
+                    width: 100%;
+                    height: 85%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    .popup__text{
+                        width: 30%;
+                    }
+
+                    p{
+                        margin: 10px 10px 10px 0;
+                        font-size: 1.2rem;
+                    }
+
+                    input{
+                        height: 30px;
+                        border: 0;
+                        box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.26);
+                        border-radius: 10px;
+                        font-size: 0.9rem;
+                        cursor: pointer;
+                        padding: 0 0 0 10px;
+                    }
+
+                    input._error{
+                        transition: 0.3s;
+                        box-shadow: 0 0 5px rgb(255, 42, 42);
+                    }
+
+                    .popup__input-2{
+                        margin-bottom: 10px;
+                    }
+
+                    textarea{
+                        width: 100%;
+                        height: 90px;
+                        border: 0px;
+                        resize: none;
+                        font-size: 0.9rem;
+                        padding: 0 0 0 10px;
+                        border: 0;
+                        box-shadow:0 0 10px 2px rgba(0,0,0,0.26);
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                
+            }
+
+            .radio{
+                margin-bottom: 20px;
+
+                p{
+                    font-size: 1.2rem;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .radio__wrap{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    border: 0;
+                }
+
+                .radio__item{
+                    width: 100%;
+                    margin: 10px;
+                    font-size: 1.2rem;
+                    img{
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .radio__wrap input[type=radio] {
+                    display: none;
+                }
+
+                .radio__wrap label {
+                    cursor: pointer;
+                    padding: 5px 15px;
+                    line-height: 34px;
+                    border-right: none;    
+                    user-select: none;
+                }
+
+                .radio__wrap .radio__item label {
+                    border-radius: 15px;
+                }
+                 
+                .radio__wrap input[type=radio]:checked + label {
+                    background: #ffc14dcc;
+                    box-shadow: 0 0 15px 0px #ffc14d;
+                }
+
+                .radio__wrap label:hover {
+                    color: #666;
+                }
+            }
+        }
+
+        .popup__header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        .popup__close img{
+            width: 25px;
+        }
+        
+        fieldset img{
+            width: 20px;
+        }
+
+        .popup__button{
+            border: 0;
+            font-size: 1.2rem;
+            width: 40%;
+            height: 40px;
+            margin: auto;
+            border: 0;
+            border-radius: 50px;
+            background: #ffc14dcc;
+            box-shadow: 0 0 15px 0px #ffc14d;
+        }
+
+    }
+}
+
+.contacts{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contacts__block{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contacts__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacts__title-name{
+            font-size: 2.5rem;
+        }
+
+        .contacts__title-border{
+            height: 3px;
+            width: 120px;
+            margin-bottom: 40px;
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
+    }
+    
+
+    .contacts__questions{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+            color: #434343;
+        }
+        .contacts__questions-title{
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contacts__questions-subtitle{
+            font-size: 1.2rem;
+            width: 80%;
+        }
+    }
+    .contacts__button{
+        padding: 20px 40px;
+        margin-top: 40px;
+        border: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+        background: #ffc14d;
+        transition: 0.5s;
+        border-radius: 50px;
+        box-shadow: 0 0 15px 4px #ffc14d;
+    }
+    .contacts__button:hover{
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}

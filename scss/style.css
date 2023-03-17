@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(93, 133, 253) 100%);
+  background-image: linear-gradient(to top, #eeeeee 0%, rgb(93, 133, 253) 100%);
 }
 .header .header__buger {
   display: none;
@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(147, 170, 241) 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, rgb(147, 170, 241) 100%);
 }
 .footer a {
   color: #434343;
@@ -88,54 +88,13 @@ body {
   background-color: rgba(0, 0, 0, 0.623);
 }
 
-.header {
-  width: 100%;
-  height: 100px;
-  padding: 0 15%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to top, #eeeeee 0%, rgb(93, 133, 253) 100%);
-}
-.header .header__buger {
-  display: none;
-}
-.header .header__block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .header__block .header__block-title {
-  font-size: 1.5rem;
-  letter-spacing: 0.11em;
-  font-weight: bold;
-  margin: 0;
-  color: #434343;
-}
-.header .header__block .header__block-logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-.header .header__block .header__block-logo > img {
-  width: 40px;
-  margin: 10px 20px 10px 0;
-}
-.header .header__block .header__block-href {
-  font-size: 1.2rem;
-  margin-left: 20px;
-  text-decoration: none;
-  color: #434343;
-}
-
 .homePage {
   width: 100%;
   margin-bottom: 10px;
   position: relative;
 }
 .homePage .homePage__block {
-  padding: 150px 15% 0;
+  padding: 0 15%;
   height: 80vh;
   width: 100%;
   background: fixed;
@@ -156,7 +115,15 @@ body {
   transform: scale(1.02);
   transition: 0.5s;
 }
+.homePage .homePage__block .homePage__Item {
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .homePage__block .homePage__Item .homePage__Item-block {
+  width: 60%;
+}
 .homePage .homePage__block .homePage__Item .homePage__title {
+  padding: 150px 0 0;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -165,23 +132,29 @@ body {
   margin: 40px 0 40px;
   font-size: 1.5rem;
 }
+.homePage .homePage__block .homePage__Item .homePage__image {
+  margin: 100px -13% 0 0;
+  width: 50%;
+  height: 60vh;
+  background-image: url("../img/narcissAlexey_well_drilling_in_a_private_house_small_drilling_r_c157ea64-271f-4997-a2b4-f4e9ae34e0c6.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  border-radius: 50px;
+}
 .homePage .homePage__block .homePage__Item .popup.active {
   display: block;
-  opacity: 1;
-  transition: 0.5s;
 }
 .homePage .homePage__block .homePage__Item .popup {
-  transition: 0.5s;
-  opacity: 0;
   display: none;
-  z-index: 5;
-  background-color: #fff;
-  position: fixed;
+  width: 37%;
   left: 32%;
   top: 10%;
-  border: 1px solid black;
-  width: 37%;
+  z-index: 5;
   margin: auto;
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid black;
   border-radius: 20px;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper {
@@ -392,9 +365,9 @@ body {
   }
 }
 .services {
-  width: 90%;
+  width: 100%;
   padding: 0 15%;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,19 +404,19 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  margin: 0 20px 30px 0;
+  margin: 0 0 50px;
   text-decoration: none;
   border-radius: 20px;
 }
 .services .services__block .services__block-item .services__item-image {
-  height: 150px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 15px 0;
 }
 .services .services__block .services__block-item .services__item-image .services__image {
-  width: 40%;
+  width: 35%;
 }
 .services .services__block .services__block-item .services__item-title {
   text-align: center;
@@ -489,7 +462,7 @@ body {
   padding: 0 15%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: stretch;
   flex-wrap: wrap;
 }
@@ -568,6 +541,13 @@ body {
   margin-bottom: 40px;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
+.contacts .contacts__map {
+  width: 100%;
+}
+.contacts .contacts__map iframe {
+  width: 100%;
+  height: 450px;
+}
 .contacts .contacts__questions {
   display: flex;
   flex-direction: column;
@@ -598,33 +578,4 @@ body {
 .contacts .contacts__button:hover {
   transform: scale(1.02);
   transition: 0.5s;
-}
-
-.footer {
-  padding: 20px 15%;
-  width: 100%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to bottom, #eeeeee 0%, rgb(147, 170, 241) 100%);
-}
-.footer a {
-  color: #434343;
-  text-decoration: none;
-}
-.footer .footer__block-item {
-  width: 25px;
-  height: 25px;
-  margin-left: 15px;
-}
-.footer .footer__block-item .footer__block-icon {
-  width: 25px;
-  height: 25px;
-}
-.footer .footer__block:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
