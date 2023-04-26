@@ -3,7 +3,7 @@
 .header {
   width: 100%;
   height: 100px;
-  padding: 0 15%;
+  padding: 0 13%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,7 @@
 }
 
 .footer {
-  padding: 20px 15%;
+  padding: 20px 13%;
   width: 100%;
   height: 150px;
   display: flex;
@@ -90,12 +90,12 @@ body {
 
 .homePage {
   width: 100%;
+  padding: 0 0 100px;
   margin-bottom: 10px;
   position: relative;
 }
 .homePage .homePage__block {
-  padding: 0 15%;
-  height: 80vh;
+  padding: 0 0 0 13%;
   width: 100%;
   background: fixed;
   background-position: center;
@@ -121,26 +121,33 @@ body {
 }
 .homePage .homePage__block .homePage__Item .homePage__Item-block {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .homePage .homePage__block .homePage__Item .homePage__title {
-  padding: 150px 0 0;
-  font-size: 2.5rem;
+  padding: 120px 0 0;
+  font-size: 2.2rem;
   font-weight: bold;
+  z-index: 1;
 }
 .homePage .homePage__block .homePage__Item .homePage__subTitle {
-  font-weight: bolder;
-  margin: 40px 0 40px;
+  font-weight: normal;
+  margin: 40px 0;
+  z-index: 1;
   font-size: 1.5rem;
 }
 .homePage .homePage__block .homePage__Item .homePage__image {
-  margin: 100px -13% 0 0;
+  z-index: 0;
+  right: 0;
+  height: 65vh;
+  margin: 50px 0 0 20px;
   width: 50%;
-  height: 60vh;
   background-image: url("../img/narcissAlexey_well_drilling_in_a_private_house_small_drilling_r_c157ea64-271f-4997-a2b4-f4e9ae34e0c6.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 50px 0 0 50px;
 }
 .homePage .homePage__block .homePage__Item .popup.active {
   display: block;
@@ -231,6 +238,7 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
   border: 0;
+  padding: 0;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item {
   width: 100%;
@@ -263,6 +271,12 @@ body {
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label:hover {
   color: #666;
 }
+.homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
+  margin-bottom: 20px;
+}
+.homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf a {
+  text-decoration: underline;
+}
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__header {
   width: 100%;
   display: flex;
@@ -289,6 +303,7 @@ body {
 }
 
 .block__chevron {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,7 +381,7 @@ body {
 }
 .services {
   width: 100%;
-  padding: 0 15%;
+  padding: 0 13%;
   margin: 0 0 40px;
   display: flex;
   flex-direction: column;
@@ -382,11 +397,11 @@ body {
   justify-content: center;
 }
 .services .services__block-title .services__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .services .services__block-title .services__title-underline {
   height: 3px;
-  width: 120px;
+  width: 100px;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 .services .services__block {
@@ -445,21 +460,21 @@ body {
   flex-direction: column;
 }
 .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info-title {
-  margin: 50px 0;
+  margin: 0 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info-title .aboutUs__info-name {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info-title .aboutUs__info-underline {
-  width: 90px;
+  width: 75px;
   height: 3px;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info__block {
-  padding: 0 15%;
+  padding: 0 13%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -479,37 +494,37 @@ body {
 .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info__block .aboutUs__info__block-item .aboutUs__info__block-text {
   width: 100%;
   font-size: 1.4rem;
-  margin-bottom: 30px;
 }
 .aboutUs .aboutUs__awards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 150px;
   background-color: #FB8C00;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
-.aboutUs .aboutUs__awards .aboutUs__awards-item {
+.aboutUs .aboutUs__awards .aboutUs__awards-block {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aboutUs .aboutUs__awards .aboutUs__awards-block .aboutUs__awards-item {
   margin: 0 20px;
-  width: 12%;
-  height: 150px;
+  width: 30%;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   font-size: 1.3rem;
 }
-.aboutUs .aboutUs__awards .aboutUs__awards-item .aboutUs__awards-title {
+.aboutUs .aboutUs__awards .aboutUs__awards-block .aboutUs__awards-item .aboutUs__awards-title {
+  font-weight: bold;
   margin: 40px 0 0 0;
 }
-.aboutUs .aboutUs__awards .aboutUs__awards-item .aboutUs__awards-subtitle {
+.aboutUs .aboutUs__awards .aboutUs__awards-block .aboutUs__awards-item .aboutUs__awards-subtitle {
   text-align: center;
 }
-.aboutUs .aboutUs__awards .aboutUs__awards-item:last-child {
-  margin-right: 0;
-}
-.aboutUs .aboutUs__awards .aboutUs__awards-border {
+.aboutUs .aboutUs__awards .aboutUs__awards-block .aboutUs__awards-border {
   height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.13);
 }
@@ -521,8 +536,8 @@ body {
   align-items: center;
 }
 .contacts .contacts__block {
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  padding: 0 13%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -559,10 +574,14 @@ body {
 .contacts .contacts__questions .contacts__questions-title {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  white-space: nowrap;
 }
 .contacts .contacts__questions .contacts__questions-subtitle {
   font-size: 1.2rem;
   width: 80%;
+}
+.contacts .contacts__questions .contacts__questions-subtitle .contacts__questions-phone {
+  white-space: nowrap;
 }
 .contacts .contacts__button {
   padding: 20px 40px;
