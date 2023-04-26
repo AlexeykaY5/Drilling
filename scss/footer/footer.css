@@ -1,12 +1,12 @@
 .footer {
-  padding: 20px 15%;
+  padding: 20px 13%;
   width: 100%;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(147, 170, 241) 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, rgb(147, 170, 241) 100%);
 }
 .footer a {
   color: #434343;

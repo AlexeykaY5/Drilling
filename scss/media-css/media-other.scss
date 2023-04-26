@@ -1,0 +1,171 @@
+.contacts{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contacts__block{
+        width: 100%;
+        padding: 0 13%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contacts__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacts__title-name{
+            font-size: 2.5rem;
+        }
+
+        .contacts__title-border{
+            height: 3px;
+            width: 120px;
+            margin-bottom: 40px;
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
+    }
+    
+    .contacts__map{
+        width: 100%;
+        iframe{
+            width: 100%;
+            height: 450px;
+        }
+    }
+
+    .contacts__questions{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+            color: #434343;
+        }
+        .contacts__questions-title{
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            white-space: nowrap;
+        }
+
+        .contacts__questions-subtitle{
+            font-size: 1.2rem;
+            width: 80%;
+            .contacts__questions-phone{
+                white-space: nowrap;
+            }   
+        }
+    }
+    .contacts__button{
+        padding: 20px 40px;
+        margin-top: 40px;
+        border: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+        background: #ffc14d;
+        transition: 0.5s;
+        border-radius: 50px;
+        box-shadow: 0 0 15px 4px #ffc14d;
+    }
+    .contacts__button:hover{
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}
+
+.contacts .contacts__title .contacts__title-name{
+    font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 768px){
+
+    .info__block .info__block--title{
+        margin: 50px 0;
+    }
+    .contacts .contacts__title .contacts__title-border{
+        width: 80px;
+    }
+    .info__block .info__block--title .info__title{
+        font-size: 1.8rem;
+    }
+
+    .contacts .contacts__title .contacts__title-name{
+        font-size: 1.8rem;
+    }
+    
+
+    .contacts .contacts__questions .contacts__questions-title{
+        font-size: 1.2rem;
+    }
+
+    .contacts .contacts__questions .contacts__questions-subtitle{
+        font-size: 1rem;
+    }
+
+    .contacts .contacts__button{
+        font-size: 1.2rem;
+    }
+
+    .contacts .contacts__questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .contacts .contacts__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts .contacts__map{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+
+    .contacts .contacts__questions .contacts__questions-title{
+        font-size: 1.1rem;
+    }
+
+    .contacts .contacts__questions .contacts__questions-subtitle{
+        font-size: 0.9rem;
+    }
+
+    .contacts .contacts__button{
+        font-size: 1.1rem;
+    }
+
+    .info__block .info__block--title .info__title{
+        font-size: 1.5rem;
+    }
+
+    .contacts .contacts__title .contacts__title-name{
+        font-size: 1.5rem;
+    }
+
+    .info__block .info__block--item p{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .info__block .info__block--title .info__title{
+        font-size: 1.3rem;
+    }
+
+    .contacts .contacts__title .contacts__title-name{
+        font-size: 1.3rem;
+    }
+
+    .info__block .info__block--item p{
+        font-size: 0.8rem;
+    }
+
+}
