@@ -31,6 +31,7 @@
                 }
                 
                 .popup{
+                    top: 5%;
                     width: 50%;
                     left: 25%;
                 }
@@ -138,18 +139,45 @@
 
 }
 
-@media only screen and (max-width: 1050px) {    
+@media only screen and (max-width: 1100px) {    
     .homePage{
         .homePage__block{
             .homePage__Item{
                 .popup{
+                    top: 3%;
                     width: 60%;
-                    left: 15%;
+                    left: 20%;
+                    .popup__wrapper{
+                        padding: 10px;
+                    }
                 }
             }
         }
     }
 
+}
+
+@media only screen and (max-width: 950px) {
+    .homePage{
+        .homePage__block{
+            .homePage__Item{
+                .popup{
+                    width: 80%;
+                    left: 10%;
+                    .popup__wrapper{
+                        .block__wrap{
+                            .radio{
+                                .radio__wrap input[type=radio]:checked + label{
+                                    width: 60%;
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,6 +219,7 @@
                 }
                 
                 .popup{
+                    top: 1%;
                     width: 80%;
                     left: 10%;
                 }
@@ -212,25 +241,12 @@
     .aboutUs{
         .aboutUs__container{
             .aboutUs__info{
-                .aboutUs__info-title{
-                    .aboutUs__info-name{
-                    }
-    
-                    .aboutUs__info-underline{
-                    }
-                }
-    
                 .aboutUs__info__block{
                     padding: 0 4%;
                     flex-wrap: wrap;
                     .aboutUs__info__block-item{
                         width: 40%;
                         margin: 0 10px 60px;
-    
-                        .aboutUs__info__block-image{
-
-                        }
-                        
                         .aboutUs__info__block-text{
                             font-size: 1rem;
                         }
