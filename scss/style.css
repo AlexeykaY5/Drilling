@@ -154,29 +154,27 @@ body {
 }
 .homePage .homePage__block .homePage__Item .popup {
   display: none;
-  width: 37%;
-  left: 32%;
-  top: 10%;
+  width: 40%;
+  left: 30%;
+  top: 5%;
   z-index: 5;
-  margin: auto;
   position: fixed;
   background-color: #fff;
   border: 1px solid black;
   border-radius: 20px;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper {
-  height: 100%;
   padding: 25px;
   display: flex;
   flex-direction: column;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title {
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block {
   display: flex;
@@ -185,6 +183,7 @@ body {
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container {
   width: 100%;
   height: 85%;
+  margin: 5px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -193,8 +192,7 @@ body {
   width: 30%;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p {
-  margin: 10px 10px 10px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input {
   height: 30px;
@@ -228,9 +226,9 @@ body {
   margin-bottom: 20px;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap {
   display: flex;
@@ -242,8 +240,8 @@ body {
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item {
   width: 100%;
-  margin: 10px;
-  font-size: 1.2rem;
+  margin: 5px;
+  font-size: 1rem;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item img {
   width: 20px;
@@ -254,12 +252,15 @@ body {
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label {
   cursor: pointer;
+  width: 60%;
   padding: 5px 15px;
   line-height: 34px;
   border-right: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  display: flex;
+  align-items: center;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label {
   border-radius: 15px;
@@ -272,7 +273,8 @@ body {
   color: #666;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf a {
   text-decoration: underline;
