@@ -483,7 +483,7 @@
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
     .homePage .homePage__block .homePage__Item .homePage__Item-block .homePage__title{
         font-size: 1.5rem;
     }
@@ -499,4 +499,175 @@
     .services .services__block-title .services__title{
         font-size: 1.5rem;
     }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__close img{
+        width: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
+        font-size: 0.7rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input{
+        font-size: 0.7rem;
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container{
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container .popup__input--block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container textarea{ 
+        height: 45px;
+        font-size: 0.7rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item img{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio]:checked + label{
+        width: 90%;
+        height: 20px;
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0 7px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio] + label{
+        width: 90%;
+        height: 20px;
+        font-size: 0.55rem;
+        margin: 0;
+        padding: 0 7px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item{
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
+        font-size: 0.7rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button{
+        font-size: 0.9rem;
+        width: 60%;
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio{
+        margin: 0;
+    }
+
 }
+
+
+@media only screen and (max-width: 320px) {
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
+        font-size: 0.7rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__close img{
+        width: 18px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
+        font-size: 0.55rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input{
+        font-size: 0.55rem;
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container .popup__input--block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container textarea{ 
+        height: 45px;
+        font-size: 0.55rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p{
+        font-size: 0.6rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item img{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio]:checked + label{
+        width: 90%;
+        height: 20px;
+        font-size: 0.55rem;
+        margin: 0;
+        padding: 0 7px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio] + label{
+        width: 90%;
+        height: 20px;
+        font-size: 0.55rem;
+        margin: 0;
+        padding: 0 7px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item{
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
+        font-size: 0.55rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button{
+        font-size: 0.7rem;
+        width: 60%;
+        height: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio{
+        margin: 0;
+    }
+
+}
+

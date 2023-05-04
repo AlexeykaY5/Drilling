@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1100px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .block {
+    font-size: 1rem;
+  }
+  .block p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .block {
+    font-size: 0.9rem;
+  }
+  .block p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .block {
+    font-size: 0.7rem;
+  }
+  .block p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 250px) {
+  h1 {
+    font-size: 0.8rem;
+  }
+  .block {
+    font-size: 0.5rem;
+  }
+  .block p {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=media-polit.css.map */
