@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бурение скважин на воду под ключ</title>
     <link rel="shortcut icon" href="./img/logo__adress.svg" type="image/png">
+    <link rel="stylesheet" href="./scss/header/header.css">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./scss/media-css/media.css">
 </head>
@@ -26,17 +27,29 @@
 
             <a class="header__block-href" href="#number6">Контакты</a>
         </div>
-        <button class="header__buger">
-            <div class="header__buger--stick"></div>
-            <div class="header__buger--stick"></div>
-            <div class="header__buger--stick"></div>
+
+
+        
+        <button class="header__burger" id="burger">
+            <div class="header__burger--stick header__burger--stick-1" id="stick"></div>
+            <div class="header__burger--stick header__burger--stick-2" id="stick"></div>
+            <div class="header__burger--stick header__burger--stick-3" id="stick"></div>
         </button>
+
+
+
     </header>
 
-    <div>
-        
+
+
+    <div class="burger__menu" id="menu">
+        <a class="burger__menu-href" href="#number3">Услуги</a>
+        <a class="burger__menu-href" href="#number4">О нас</a>
+        <a class="burger__menu-href" href="#number6">Контакты</a>
     </div>
     
+
+
     <section class="homePage">
         <div class="homePage__block">
             <div class="homePage__Item">
@@ -390,6 +403,7 @@
     </footer>
 
 
+    <script src="./js/burger.js"></script> 
     <script src="./js/popup.js"></script>    
     <script src="./js/script.js"></script>    
 </body>

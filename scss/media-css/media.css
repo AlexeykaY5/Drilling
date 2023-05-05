@@ -110,7 +110,7 @@
   .header .header__block .header__block-href {
     display: none;
   }
-  .header .header__buger {
+  .header .header__burger {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -119,7 +119,7 @@
     border: 0;
     background-color: initial;
   }
-  .header .header__buger .header__buger--stick {
+  .header .header__burger .header__burger--stick {
     width: 100%;
     height: 3px;
     background-color: rgba(0, 0, 0, 0.589);
@@ -137,6 +137,38 @@
     top: 1%;
     width: 80%;
     left: 10%;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item {
+    margin: 5px 0 0 10px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper {
+    padding: 8px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
+    margin-bottom: 5px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button {
+    font-size: 1rem;
   }
   .services {
     padding: 0 4%;
@@ -187,28 +219,6 @@
   }
 }
 @media only screen and (max-width: 620px) {
-  .homePage .homePage__block .homePage__Item .popup {
-    top: 3%;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title {
-    font-size: 1.2rem;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p {
-    font-size: 1rem;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper {
-    padding: 5%;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p {
-    font-size: 1.1rem;
-    margin: 5px 0;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item {
-    font-size: 1rem;
-  }
-  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
-    font-size: 1rem;
-  }
   .homePage .homePage__block {
     padding: 0;
   }
@@ -244,6 +254,24 @@
   }
   .aboutUs .aboutUs__container .aboutUs__info .aboutUs__info-title {
     margin: 0 0 30px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container {
+    margin: 4px 0;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container .popup__input-2 {
+    margin: 0;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio]:checked + label {
+    width: 90%;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 485px) {
@@ -322,6 +350,49 @@
   .contacts .contacts__questions .contacts__questions-subtitle {
     text-align: center;
   }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__close img {
+    width: 20px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container {
+    flex-wrap: nowrap;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p {
+    margin-right: 10px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p {
+    font-size: 0.8rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input {
+    font-size: 0.8rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container textarea {
+    font-size: 0.8rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p {
+    font-size: 0.9rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label {
+    font-size: 0.8rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label {
+    padding: 3px 0 3px 10px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label {
+    line-height: 25px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item img {
+    width: 15px;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf {
+    font-size: 0.8rem;
+  }
+  .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button {
+    font-size: 0.9rem;
+    height: 30px;
+  }
 }
 @media only screen and (max-width: 375px) {
   .homePage .homePage__block .homePage__Item .homePage__Item-block .homePage__title {
@@ -353,7 +424,7 @@
     height: 20px;
   }
   .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container {
-    margin: 8px 0;
+    margin: 3px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

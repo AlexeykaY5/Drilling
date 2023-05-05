@@ -86,14 +86,10 @@
                     .aboutUs__info-underline{
                         width: 65px;
                     }
-                }
-    
+                }                         
                 .aboutUs__info__block{  
                     padding: 0 8%;     
-                    .aboutUs__info__block-item{
-                        .aboutUs__info__block-image{
-                        }
-                        
+                    .aboutUs__info__block-item{                       
                         .aboutUs__info__block-text{
                             font-size: 1.1rem;
                         }
@@ -117,18 +113,13 @@
             padding: 0 8%;
         }
         .contacts__title{
-
-    
             .contacts__title-name{
                 font-size: 2.2rem;
             }
-
         }
         .contacts__button{
             padding: 15px 30px;
             font-size: 1.2rem;
-        }
-        .contacts__button:hover{
         }
     }
     
@@ -154,7 +145,6 @@
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 950px) {
@@ -189,7 +179,7 @@
             }
         }
         
-        .header__buger{
+        .header__burger{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -197,7 +187,7 @@
             height: 50px;
             border: 0;
             background-color: initial;
-            .header__buger--stick{
+            .header__burger--stick{
                 width: 100%;
                 height: 3px;
                 background-color: rgba(0, 0, 0, 0.589);
@@ -213,22 +203,60 @@
                 .homePage__title{
                     font-size: 1.8rem;
                 }
-
                 .homePage__subTitle{
                     font-size: 1rem;
-                }
-                
+                }           
                 .popup{
                     top: 1%;
                     width: 80%;
                     left: 10%;
                 }
-                .homePage__image{
-
-                }
             }
         }
     }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
+        font-size: 1.1rem;
+        margin-bottom: 10px;   
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item{
+        margin: 5px 0 0 10px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper{
+        padding: 8px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
+        margin-bottom: 5px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button{
+        font-size: 1rem;
+    }
+
     .services{
         padding: 0 4%;
     }
@@ -292,34 +320,8 @@
 
 
 @media only screen and (max-width: 620px) {
-    .homePage .homePage__block .homePage__Item .popup{
-        top: 3%;
-    }
-    
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
-        font-size: 1.2rem;
-    }
 
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
-        font-size: 1rem;
-    }
 
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper{
-        padding: 5%;
-    }
-
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p{
-        font-size: 1.1rem;
-        margin: 5px 0;    
-    }
-
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item{
-        font-size: 1rem;
-    }
-
-    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
-        font-size: 1rem;
-    }
 
     .homePage .homePage__block{
         padding: 0;
@@ -350,9 +352,6 @@
             .homePage__title{
                 font-size: 2.2rem;
             }
-            .homePage__subTitle{
-
-            }
         }
     }
     .homePage .homePage__block .homePage__Item .homePage__image{
@@ -362,6 +361,32 @@
         margin: 0 0 30px;
     }
 }
+
+@media only screen and (max-width: 550px) {
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container{
+        margin: 4px 0;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container .popup__input-2{
+        margin: 0;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap input[type=radio]:checked + label{
+        width: 90%;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label{
+        width: 90%;
+    }
+
+}
+
 
 @media only screen and (max-width: 485px) {
     .services .services__block{
@@ -382,12 +407,6 @@
         .homePage__block{
             padding: 0;
             .homePage__Item{
-                // background-image: url('/img/narcissAlexey_well_drilling_in_a_private_house_small_drilling_r_c157ea64-271f-4997-a2b4-f4e9ae34e0c6.png');
-                // background-position: center;
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // color: black;
-
                 .homePage__Item-block{
                     width: 80%;
                     margin: auto;
@@ -404,15 +423,7 @@
 
     .aboutUs{
         .aboutUs__container{
-            .aboutUs__info{
-                .aboutUs__info-title{
-                    .aboutUs__info-name{
-                    }
-    
-                    .aboutUs__info-underline{
-                    }
-                }
-    
+            .aboutUs__info{  
                 .aboutUs__info__block{
                     flex-wrap: wrap;
                     flex-direction: column;
@@ -420,13 +431,7 @@
                     justify-content: start;
                     .aboutUs__info__block-item{
                         width: 80%;
-                        margin: 0 0 30px;
-    
-                        
-                        
-                        .aboutUs__info__block-text{
-
-                        }
+                        margin: 0 0 30px;               
                     }
                 }
             }
@@ -481,6 +486,64 @@
     .contacts .contacts__questions .contacts__questions-subtitle{
         text-align: center;
     }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__title{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__close img{
+        width: 20px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container{
+        flex-wrap: nowrap;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
+        margin-right: 10px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container p{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container input{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container textarea{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio p{
+        font-size: 0.9rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap .radio__item label{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label{
+        padding: 3px 0 3px 10px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__wrap label{
+        line-height: 25px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .radio .radio__item img{
+        width: 15px;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .polit__konf{
+        font-size: 0.8rem;
+    }
+
+    .homePage .homePage__block .homePage__Item .popup .popup__wrapper .popup__button{
+        font-size: 0.9rem;
+        height: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -518,7 +581,7 @@
     }
 
     .homePage .homePage__block .homePage__Item .popup .popup__wrapper .block__wrap .popup__block .popup__block-container{
-        margin: 8px 0;
+        margin: 3px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;

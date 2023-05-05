@@ -13,6 +13,30 @@
 .header .header__buger {
   display: none;
 }
+.header .header__buger--stick-1 {
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.header .header__buger--stick-1.active {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.header .header__buger--stick-2 {
+  transition: 0.5s;
+  display: block;
+}
+.header .header__buger--stick-2.active {
+  transition: 0.5s;
+  display: none;
+}
+.header .header__buger--stick-3 {
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+.header .header__buger--stick-3.active {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
 .header .header__block {
   display: flex;
   align-items: center;
@@ -39,6 +63,10 @@
   margin-left: 20px;
   text-decoration: none;
   color: #434343;
+}
+
+.burger__menu {
+  display: none;
 }
 
 .footer {
