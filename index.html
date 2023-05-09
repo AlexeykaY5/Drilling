@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бурение скважин на воду под ключ</title>
     <link rel="shortcut icon" href="./img/logo__adress.svg" type="image/png">
+    <link rel="stylesheet" href="./scss/reset.css">
+    <link rel="stylesheet" href="./scss/fonts-css/fonts.css">
     <link rel="stylesheet" href="./scss/header/header.css">
+    <link rel="stylesheet" href="./scss/footer/footer.css">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./scss/media-css/media.css">
 </head>
@@ -44,8 +47,23 @@
 
     <div class="burger__menu" id="menu">
         <a class="burger__menu-href" href="#number3">Услуги</a>
+            <div class="burger__menu-services">
+                <a class="burger__services-link" href="./drilling.html">Бурение скважин</a>
+                <a class="burger__services-link" href="./obustr.html">Обустройство скважин</a>
+                <a class="burger__services-link" href="./cons.html">Тампонаж и консервация</a>
+                <a class="burger__services-link" href="./heating.html">Монтаж отопления</a>
+            </div>
         <a class="burger__menu-href" href="#number4">О нас</a>
         <a class="burger__menu-href" href="#number6">Контакты</a>
+            <div class="burger__menu-contacts">
+                <a class="burger__menu-phone" href="tel:+375295555816">+375(29)555-58-16</a> 
+            </div>
+        
+        <!-- <div class="burger__botom-text">
+            <p>
+                © 2023 Бурение скважин
+            </p>
+        </div> -->
     </div>
     
 
@@ -84,7 +102,7 @@
                                         <p>Имя</p>
                                     </div>
                                     <div class="popup__input--block">
-                                        <input class="popup__input-1 _req" placeholder="Ваше имя" type="text">
+                                        <input class="popup__input-1 _req" name="name" value="" placeholder="Ваше имя" type="text">
                                     </div>
                                 </div>
                                 <div class="popup__block-container">  
@@ -94,7 +112,7 @@
                                     <div class="popup__input--block">
                                         <div>
                                             <!-- <span class="popup__span">+375</span> -->
-                                            <input class="popup__input-2 _req" placeholder="Ваш номер телефона" type="tel">
+                                            <input class="popup__input-2 _req" name="phone" value="" placeholder="Ваш номер телефона" type="tel">
                                         </div>
                                     </div>
                                 </div>
@@ -103,7 +121,7 @@
                                         <p>Сообщение</p>
                                     </div>
                                     <div class="popup__input--block">
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="При желании опишите вопрос"></textarea>
+                                        <textarea name="text" id="" cols="30" rows="10" value="" placeholder="При желании опишите вопрос"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -111,25 +129,25 @@
                                 <p>Выберите по какой задаче вопрос:</p>
                                 <fieldset class="radio__wrap">
                                     <div class="radio__item">
-                                        <input type="radio" id="brickwall" name="drone" value="brickwall" checked>
-                                        <label for="brickwall"><img src="./img/brickwall.png" alt="brickwall">Обустройство скважины</label>
-                                    </div>                                
-                                    <div class="radio__item">
-                                        <input type="radio" id="drill" name="drone" value="drill">
+                                        <input type="radio" id="drill" name="radioB" value="drill" checked>
                                         <label for="drill"><img src="./img/drilling-rig.png" alt="drilling">Бурение скважины</label>
                                     </div>
                                     <div class="radio__item">
-                                        <input type="radio" id="cons" name="drone" value="cons">
+                                        <input type="radio" id="brickwall" name="radioB" value="brickwall">
+                                        <label for="brickwall"><img src="./img/brickwall.png" alt="brickwall">Обустройство скважины</label>
+                                    </div>                                
+                                    <div class="radio__item">
+                                        <input type="radio" id="cons" name="radioB" value="cons">
                                         <label for="cons"><img src="./img/cons.svg" alt="cons">Тампонаж и консервация</label>
                                     </div>
                                     <div class="radio__item">
-                                        <input type="radio" id="heater" name="drone" value="heater">                                      
+                                        <input type="radio" id="heater" name="radioB" value="heater">                                      
                                         <label for="heater"><img src="./img/heater.png" alt="heater">Отопление</label>
                                     </div>
                                 </fieldset>
                             </div>
                             <div class="polit__konf">
-                                <input type="checkbox" name="polit__konf" id="polit__konf">
+                                <input type="checkbox" name="polit__konf" id="polit__konf" class="_req">
                                 Отправляя свои данные вы соглашаетесь с <a href="./polit.html">политикой конфиденциальности</a>
                             </div>
                         </div>

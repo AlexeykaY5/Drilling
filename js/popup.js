@@ -1,4 +1,3 @@
-
 document.getElementById('contacts__button').onclick = function() {
     document.getElementById('popup').classList.add('active');
     document.getElementById('bacg-body').classList.add('active');
